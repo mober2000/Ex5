@@ -192,23 +192,10 @@ public class EX5 {
         );
 
         waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text'][contains(@text,'Russia']"),
+                By.xpath("//*[@resource-id='org.wikipedia:id/view_page_title_text'][contains(@text,'Russia')]"),
                 "Cannot find title",
                 15
         );
-//
-//        waitForElementAndClick(
-//                By.xpath("//*[@text='Learning programming']"),
-//                "Cannot find create folder",
-//                5
-//        );
-//
-//
-//        waitForElementNotPresent(
-//                By.xpath("//*[@text='Java (programming language)']"),
-//                "Cannot delete saved article",
-//                5
-//        );
     }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
